@@ -62,7 +62,7 @@ if(form){
  
 (function(){
   const path = window.location.pathname;
-  const isHome = /(^\/$|lander\.html$)/.test(path);
+  const isHome = /(^\/$|games\.html$)/.test(path);
   if(!isHome) return;
   if(sessionStorage.getItem('ageGateShown') === '1') return;
   sessionStorage.setItem('ageGateShown', '1');
